@@ -1,17 +1,17 @@
-// import React from 'react'
+import React from 'react'
 
 const CourseForm = (props) => {
 
     // console.log(props);
     
-    let{course,trainer,handleChange}=props
+    let{course,trainer,handleChange,handleSubmit}=props
 
 
 
 
   return (
     <>
-    <form>
+    <form  onSubmit={handleSubmit}  >
         <div className="form-group" >
             <label>Course</label>
             <input type="text" placeholder="Enter Course Name"
@@ -19,7 +19,7 @@ const CourseForm = (props) => {
             value={course}
             onChange={handleChange}
             
-            ></input>
+            />
 
         </div>
 
@@ -32,13 +32,13 @@ const CourseForm = (props) => {
             onChange={handleChange}
             
             
-            ></input>
+            />
 
         </div>
 
         <div className="form-group">
 
-            <button>Submit</button>
+            <button   >Submit</button>
 
         </div>
        
@@ -46,6 +46,8 @@ const CourseForm = (props) => {
 
 
     </form>
+
+   
     
     
     </>
