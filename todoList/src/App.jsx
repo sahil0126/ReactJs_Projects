@@ -48,6 +48,27 @@ const App = () => {
     }
 
 
+    let handleUpdate = (y)=>{  //y=> id of data to be updated , y=2
+
+      //!restItems (Data which should not be updated and assign it to items)
+      let restItems=items.filter((value)=>value.id != y)  // 1!=2, 2!=2, 3!=3
+      console.log("restItems:-",restItems); 
+
+      //!updateItems (Data which has to be updated,so assign it to i/p fields for updating)
+      let updateItem = items.find((value)=>value.id==y)
+      console.log("updatedItem:-",updateItem);
+
+      setState({
+        items:restItems,
+        course:updateItem.course,
+        trainer:updateItem.trainer,
+        id:updateItem.id
+      })
+      
+      
+    }
+
+
 
 
 
@@ -63,9 +84,10 @@ const App = () => {
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           handleDelete={handleDelete}
+          handleUpdate={handleUpdate}
          
           />
-          <ToDolist  items={items} handleDelete={handleDelete} />
+          <ToDolist  items={items} handleDelete={handleDelete}  handleUpdate={handleUpdate} />
         </main>
       </article>
     </>

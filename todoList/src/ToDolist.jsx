@@ -3,7 +3,7 @@ import React from 'react'
 const ToDolist = (props) => {
   console.log(props);
 
-  let {items,handleDelete}=props
+  let {items,handleDelete,handleUpdate}=props
   
   return (
    <>
@@ -29,7 +29,7 @@ const ToDolist = (props) => {
               <td>{value.course}</td>
               <td>{value.trainer}</td>
               <td> 
-              <button>Update</button>
+              <button onClick={()=>handleUpdate(value.id)}>Update</button>
               <button onClick={()=>handleDelete(value.id)} >Delete</button>  
               </td>
 
