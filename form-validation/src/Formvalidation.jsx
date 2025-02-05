@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Formvalidation = () => {
   let [formData, setFormData] = useState({
@@ -124,6 +124,20 @@ const Formvalidation = () => {
 
 
     setErrors(validationErrors);
+
+    validationErrors=={} && setFormData({
+      reqfield: "",
+    email: "",
+    password: "",
+    confirmpass: "",
+    url: "",
+    digits: "",
+    number: "",
+    alphanum: "",
+    textarea: ""
+    })
+
+
   };
 
   let handleReset = (e) => {
