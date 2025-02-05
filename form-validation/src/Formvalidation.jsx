@@ -126,6 +126,26 @@ const Formvalidation = () => {
     setErrors(validationErrors);
   };
 
+  let handleReset = (e) => {
+    e.preventDefault()
+    setFormData({
+      reqfield: "",
+    email: "",
+    password: "",
+    confirmpass: "",
+    url: "",
+    digits: "",
+    number: "",
+    alphanum: "",
+    textarea: ""
+    })
+
+  }
+
+
+
+
+
   return (
     <>
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
@@ -302,7 +322,7 @@ const Formvalidation = () => {
           </div>
         </section>
         <button onClick={handleSubmit} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" >Submit</button>
-      <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" >Reset</button>
+      <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={handleReset} >Reset</button>
       </form>
       <br>
       </br>
