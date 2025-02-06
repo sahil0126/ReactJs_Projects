@@ -1,8 +1,12 @@
 import React from 'react'
+import VideoContainer from './VideoContainer'
+import './global.css'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <VideoContainer/>
+    </>
   )
 }
 
