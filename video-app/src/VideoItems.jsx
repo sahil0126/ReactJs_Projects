@@ -5,7 +5,7 @@ const VideoItems = (props) => {
 
   console.log(props.data);
 
-  let {item,setVideo,setTitle}=props.data
+  let {item,setVideo,setTitle}=props.data 
 
   let {thumbnailUrl,views,title,videoUrl}=item
 
