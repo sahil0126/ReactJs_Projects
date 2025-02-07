@@ -12,6 +12,10 @@ const Player = (props) => {
   let [muteVideo,setMuteVideo]=useState(true)
 
   let playOrPause = () => {
+
+    videoRef.current.autoplay=true
+
+
     if(play==true){
       videoRef.current.play()
     }

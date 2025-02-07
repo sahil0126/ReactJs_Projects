@@ -28,7 +28,7 @@ const VideoContainer = () => {
         state.map((item)=>{
           return (
 
-            <VideoItems key={item.id} data={{item}} />
+            <VideoItems key={item.id} data={{item,setVideo,setTitle}} />
           )
         })
 

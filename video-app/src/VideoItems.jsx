@@ -3,9 +3,16 @@ import { IoMdEye } from "react-icons/io";
 
 const VideoItems = (props) => {
 
-  console.log(props.data.item);
+  console.log(props.data);
 
-  let {thumbnailUrl,views}=props.data.item
+  let {item,setVideo,setTitle}=props.data
+
+  let {thumbnailUrl,views,title,videoUrl}=item
+
+  let changeVideo = () => {
+    setVideo(videoUrl)
+    setTitle(title)
+  }
   
 
 
@@ -16,7 +23,7 @@ const VideoItems = (props) => {
 
       <div className='rightImageContainer' >
 
-        <img src={thumbnailUrl} className='rightimg' />
+        <img src={thumbnailUrl} className='rightimg' onClick={changeVideo}  />
 
       </div>
 
