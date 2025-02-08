@@ -6,7 +6,7 @@
 
 nav{
     width: 100%;
-    background-color: yellow;
+    background-color: #fdb44b;
     display: flex;
     align-items: center;
     height: 8vh;
@@ -21,14 +21,16 @@ nav{
 }
 
 .formBlock{
-    background-color: aliceblue;
+    background-color:  #00204a;
     width: 40%;
     height: 500px;
     margin: 40px;
+    
 }
 
 .form-content{
     margin-left: 20px;
+    
 }
 
 .form-content label{
@@ -36,6 +38,7 @@ nav{
     display: block;
     font-size: 20px;
     padding: 10px;
+    color: white;
 }
 
 .form-content input , textarea{
