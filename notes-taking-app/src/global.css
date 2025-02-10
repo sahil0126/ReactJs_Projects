@@ -48,3 +48,28 @@ nav{
     border-radius: 2px;
     padding: 10px;
 }
+
+.displaySection{
+    width: 60%;
+}
+
+.selectDisplayNotes{
+    background-color: #c4c4c4;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #0f0750;
+    height: 5vh;
+}
+
+.selectDisplayNotes label{
+    display: inline;
+    font-size: 18px;
+    padding: 2px;
+    margin: 1px;
+}
+
+.selectDisplayNotes span{
+    font-size: 17px;
+    padding: 4px;
+}

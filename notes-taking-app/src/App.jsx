@@ -5,6 +5,7 @@ import NoteForm from "./NoteForm";
 import Display from "./Display";
 import NoteProvider from "./NoteProvider";
 
+
 const App = () => {
   return (
     <>

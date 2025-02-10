@@ -22,6 +22,24 @@ const NoteProvider = (props) => {
         }
     }
 
+
+    let handleCategory = (e)=>{
+        setSelectedCategory(e.target.value)
+    }
+    let handleDelete = (x)=>{
+        let filteredItems=task.filter(item=>item.id != x)
+    }
+    let handleUpdate = (y) => {
+        let remainingItems = task.filter(item => item.id != y)
+        let editItem=task.find(item=> item.id==y)
+        setTask(remainingItems)
+        setState(editItem)
+    }
+
+
+
+
+
     let [task,setTask]=useState(getLocalItems()) // to store all the notes together
 
     const addTask = (title,description,category)=>{
@@ -32,12 +50,16 @@ const NoteProvider = (props) => {
     useEffect(()=>{
         localStorage.setItem("lists",JSON.stringify(task))
                             //"key","value"
-    })
+    },[task])
+
+    let [selectedCategory,setSelectedCategory]=useState("all")
 
 
 
 
-    return <NoteContext.Provider value={{state,setState,task,addTask}} >
+
+
+    return <NoteContext.Provider value={{state,setState,task,addTask, selectedCategory , setSelectedCategory,handleCategory,handleDelete,handleUpdate}} >
         {props.children}
         </NoteContext.Provider>;
 };
