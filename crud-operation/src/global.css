@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: snow;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darkcyan;
+    font-size: 20px;
+}
+
+.crud{
+    color: darkblue;
+}
+
+.operation{
+    color: yellow;
+}
