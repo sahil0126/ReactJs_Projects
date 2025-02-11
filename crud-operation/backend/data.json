@@ -1,0 +1,23 @@
+{
+    "candidate":[
+        {
+
+            
+            "firstname":"Akshay",
+            "lastname":"Khanna",
+            "age":"32",
+            "city":"Mumbai",
+            "id":1
+        },
+        {
+
+            
+            "firstname":"RajKumar",
+            "lastname":"Rao",
+            "age":"29",
+            "city":"Mumbai",
+            "id":2
+        }
+    ]
+    
+}

@@ -20,3 +20,28 @@ nav{
 .operation{
     color: yellow;
 }
+
+.layout{
+    display:flex
+}
+
+.sidebar{
+    display: flex;
+    background-color: snow;
+    width: 15%;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: darkblue;
+    background-color: yellow;
+    display: block;
+    width: 226px;
+    padding: 10px;
+    border-radius: 2px solid darkblue;
+    margin: 0px 20px 20px 0px;
+}
+
