@@ -1,23 +1,18 @@
 {
-    "candidate":[
-        {
-
-            
-            "firstname":"Akshay",
-            "lastname":"Khanna",
-            "age":"32",
-            "city":"Mumbai",
-            "id":1
-        },
-        {
-
-            
-            "firstname":"RajKumar",
-            "lastname":"Rao",
-            "age":"29",
-            "city":"Mumbai",
-            "id":2
-        }
-    ]
-    
+  "candidate": [
+    {
+      "firstname": "RajKumar",
+      "lastname": "Rao",
+      "age": "29",
+      "city": "Mumbai",
+      "id": "2"
+    },
+    {
+      "id": "099a",
+      "firstname": "Anu",
+      "lastname": "a",
+      "age": "21",
+      "city": "Nagpur"
+    }
+  ]
 }

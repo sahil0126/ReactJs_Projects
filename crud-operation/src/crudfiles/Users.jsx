@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { MdEdit } from "react-icons/md";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import axios from "../axios.jsx"
+import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
+
 
 const Users = () => {
   
@@ -20,6 +23,14 @@ const Users = () => {
   useEffect(()=>{
     getData();
   },[])
+
+
+
+  let handleDelete = (id) => {
+    axios.delete(`candidate/${id}`).then(()=>{
+      toast.error("Data Deleted")
+    })
+  }
   
   
   
@@ -52,8 +63,8 @@ const Users = () => {
                   <td>{value.lastname}</td>
                   <td>{value.age}</td>
                   <td>{value.city}</td>
-                  <td><MdEdit /></td>
-                  <td><MdOutlineDeleteOutline /></td>
+                  <td><Link  to={`/edituser/${value.id}`}   > <MdEdit /></Link></td>
+                  <td><span onClick={()=>{handleDelete(value.id)}} ><MdOutlineDeleteOutline /></span></td>
 
                 </tr>
               )

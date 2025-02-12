@@ -17,7 +17,7 @@ export let crudPath = createBrowserRouter(
                     element:<Createuser/>
                 },
                 {
-                    path:'edituser',
+                    path:'edituser/:id',   //parameter or slug
                     element:<Edituser/>
                 },
                 {

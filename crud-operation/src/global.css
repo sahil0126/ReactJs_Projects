@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 nav{
     background-color: snow;
     height: 8vh;
@@ -45,3 +48,58 @@ nav{
     margin: 0px 20px 20px 0px;
 }
 
+table{
+    border: 1px solid black;
+ 
+    
+
+
+}
+/* .userBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+
+
+.content{
+    margin: 8rem 30rem;
+}
+
+.innercontent form{
+    width:380px;
+    padding:18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.form-group label{
+    display: block;
+    padding: 5px;
+    color: blue;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darkblue;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.form-group button{
+    background-color: yellow;
+    color: darkblue;
+    padding: 10px;
+    border: 1px solid yellow;
+
+
+
+}
