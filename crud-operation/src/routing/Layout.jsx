@@ -1,20 +1,43 @@
 import React from 'react'
+import Navbar from "../crudfiles/Navbar"
 import { Toaster } from 'react-hot-toast'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet,NavLink } from 'react-router-dom'
 
 
 const Layout = () => {
   return (
    <>
     <Toaster/>
+   <Navbar/>
    <main className="layout">
     <section className="sidebar">
         <ul>
             <li>
-                <Link to='/createuser'  >CreateUser</Link>
+                <NavLink to='/createuser'  style={({isActive})=>{
+                    return {
+                        color:isActive ? "yellow" :"darkblue",
+                        backgroundColor: isActive ? "darkblue" : "yellow"
+                    }
+
+                }}    >CreateUser</NavLink>
             </li>
             <li>
-                <Link to='/users'  >Users</Link>
+                <NavLink to='/users' style={({isActive})=>{
+                    return {
+                        color:isActive ? "yellow" :"darkblue",
+                        backgroundColor: isActive ? "darkblue" : "yellow"
+                    }
+
+                }}  >Users</NavLink>
+            </li>
+            <li>
+                <NavLink to='/allusers' style={({isActive})=>{
+                    return {
+                        color:isActive ? "yellow" :"darkblue",
+                        backgroundColor: isActive ? "darkblue" : "yellow"
+                    }
+
+                }}  >All Users</NavLink>
             </li>
         </ul>
     </section>

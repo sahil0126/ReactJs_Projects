@@ -55,15 +55,12 @@ table{
 
 
 }
-/* .userBlock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 
 
-
+.userBlock{
+    margin: 8rem 30rem;
+}
 
 
 .content{
@@ -102,4 +99,37 @@ table{
 
 
 
+}
+
+.searchbox{
+    position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+
+.searchipbox{
+width: 100%;
+  padding: 8px 30px 8px 45px; 
+  border: 1px solid black;
+  border-radius: 5px;
+ } 
+
+.searchicon {
+    position: absolute;
+    margin-left: 210px;
+}
+
+
+.regilogin{
+    display: flex;
+    gap: 10%;
+    margin-left: 880px;
+}
+
+.regilogin a{
+    color: rgb(24, 37, 29);
+    text-decoration: none;
+ 
 }
