@@ -8,7 +8,7 @@ import Register from "../authentication/Register";
 import Login from "../authentication/Login";
 import PrivateRoute from "../authentication/PrivateRoute";
 import Notfound from "../crudfiles/Notfound";
-
+import RegisteredUsers from "../crudfiles/RegisteredUsers"
 
 export let crudPath = createBrowserRouter(
     [
@@ -39,6 +39,10 @@ export let crudPath = createBrowserRouter(
                 {
                     path:'login',
                     element:<Login/>
+                },
+                {
+                    path:'registeredusers',
+                    element:<RegisteredUsers/>
                 }
             ]
 

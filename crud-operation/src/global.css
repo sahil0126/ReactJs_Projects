@@ -133,3 +133,14 @@ width: 100%;
     text-decoration: none;
  
 }
+
+.regtext{
+    margin: 2rem 12rem;
+}
+
+.regbox{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}

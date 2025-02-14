@@ -39,6 +39,15 @@ const Layout = () => {
 
                 }}  >All Users</NavLink>
             </li>
+            <li>
+                <NavLink to='/registeredusers' style={({isActive})=>{
+                    return {
+                        color:isActive ? "yellow" :"darkblue",
+                        backgroundColor: isActive ? "darkblue" : "yellow"
+                    }
+
+                }}  >Registered User</NavLink>
+            </li>
         </ul>
     </section>
     <Outlet/>
